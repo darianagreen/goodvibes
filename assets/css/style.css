@@ -1,0 +1,307 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    
+    font-family: 'Coolvetica', Georgia, Times, 'Times New Roman', serif;
+        color: white;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#mainSpace {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 88%;
+    
+}
+#leftBar {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    min-width: 320px;
+  
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    min-width: 450 px;
+}
+
+@media (max-width: 1000px){
+    #leftBar {
+        min-width: 220px;  
+};
+
+}
+
+#rightSpace {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(44, 38, 51);
+}
+
+#musicPlayer {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 12%;
+    background-color:  rgb(31, 19, 41);
+    min-width: 650 px;
+}
+
+#nowPlayingBar {
+
+    display:flex;
+    flex-direction: row;
+    height: 90px;
+    width:100%;
+    padding: 16px;
+    box-sizing: border-box;
+    background:  rgb(31, 19, 41);
+}
+#nowPlayingBarLeft,
+#nowPlayingBarRight
+ {
+    min-width: 180px;
+    width: 30%;
+    background-color: rgb(31, 19, 41);
+}
+
+#nowPlayingRight {
+    position: relative;
+    margin-top: 16px;
+}
+
+#nowPlayingBarCenter
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    width: 40%;
+    max-width: 700px;
+    background-color: rgb(31, 19, 41);
+}
+
+#nowPlayingBar .content {
+    width: 100%;
+    height: 57px;
+}
+
+.playerControls .buttons {
+    margin: 5px auto;
+    display: table;
+}
+
+.controlButton {
+    vertical-align: middle;
+    background-color: transparent;
+    border:none;
+}
+
+.controlButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.controlButton.play img,
+.controlButton.pause img
+ {
+    width: 32px;
+    height: 32px;
+}
+
+.controlButton:hover {
+    cursor: pointer;
+}
+
+
+.progressTime {
+
+    text-align: center;
+    font-size: 11px;
+    color: #a0a0a0;
+    min-width: 40px;
+
+}
+
+.playbackBar {
+    display: flex;
+}
+
+.progressBar {
+    display: inline-flex;
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+}
+
+.progressBarBg {
+
+    background-color: #404040;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.progress {
+
+    background-color: #a0a0a0;
+    height: 4px;
+    width: 0;
+    border-radius: 2px;
+}
+
+.playbackBar .progressBar {
+margin-top: 3px;
+}
+
+.nowPlayingBarLeft .albumArtwork {
+
+    height: 100%;
+    max-width: 57px;
+    margin-right: 15px;
+    float: left;
+    background-size: cover;
+}
+
+
+.leftBarContent {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    vertical-align: center;
+        
+    }
+.trackInfo {
+   
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 6px 6px;
+    font-size: 13px;
+}
+
+.trackName {
+    width: 100%;
+   
+}
+
+.artistName {
+    width: 100%; 
+    font-size: 10px;
+}
+
+#nowPlayingBarRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volumeBar {
+
+    width: 180px;
+    
+}
+
+.volumeBar .progressBar {
+    width: 125px;
+}
+
+
+.groupLeftMenu {
+
+    border-top: 1px solid #a0a0a0;
+    padding: 10px 0;
+    margin-left: 10px;
+    width: 100%; 
+    display: inline-flex;
+}
+
+
+.navBar {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navBar img {
+width: 80px;
+height: auto;
+
+}
+
+ .navItem {
+     padding: 10px 0;
+    
+     display: block;
+     letter-spacing: 1px; 
+     font-size: 14px;
+     font-weight: 700;
+     position: relative;
+
+ }
+
+ .navItemLink {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 16px;
+ }
+
+ .groupLeftMenu img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 280px;
+    
+ }
+
+ @media (max-width: 1000px)
+{
+    .groupLeftMenu img {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 180px;
+        
+     }
+}
+ .navItemLink:hover {
+     color: white;
+ }
+
+ .groupLeftMenu input[type="text"] {
+     
+    display:block; 
+    background-color: transparent;
+     border: 0;
+    
+     width:100%;
+     font-size: 15px;
+      
+ }
+
+ .groupLeftMenu .navItem {
+    border-bottom: 1px solid #a0a0a0;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+    font-size: 15px;
+ }
+
+ .groupLeftMenu2 {
+     margin-left: 10px;
+ }
