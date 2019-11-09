@@ -1,18 +1,22 @@
 body {
     margin: 0px;
     padding: 0px;
+    
 }
 
 * {
     
-    font-family: 'Coolvetica', Georgia, Times, 'Times New Roman', serif;
+    font-family:'Helvetica Neue', Times, 'Times New Roman', serif;
         color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: 2px;
 }
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+   
 }
 
 #mainSpace {
@@ -20,7 +24,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 88%;
+    
     
 }
 #leftBar {
@@ -29,7 +33,7 @@ main {
     width: 20%;
     min-width: 320px;
   
-    height: 100%;
+   
     background-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
     min-width: 450 px;
@@ -46,7 +50,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 100%;
+   min-height: 90vh;
     background-color: rgb(44, 38, 51);
 }
 
@@ -288,10 +292,14 @@ height: auto;
     display:block; 
     background-color: transparent;
      border: 0;
-    
+    outline: none;
      width:100%;
      font-size: 15px;
       
+ }
+
+ .groupLeftMenu input[type="text"]:focus {
+     outline: none;
  }
 
  .groupLeftMenu .navItem {
@@ -303,5 +311,90 @@ height: auto;
  }
 
  .groupLeftMenu2 {
-     margin-left: 10px;
+     margin-left: 20px;
+ }
+
+ #mainContent {
+ padding: 0 20px;
+
+ }
+
+ .pageHeadingBig {
+     padding: 0 20px;
+     text-align: center;
+     font-size: 15px;
+     
+ }
+
+ 
+ 
+ .gridViewItem {
+     display: inline-block;
+     width: 25%;
+     max-width: 280px;
+     min-width: 230px;
+     margin-right: 6px;
+     padding: 10px;
+     margin-bottom: 10px;
+ }
+
+ .gridViewItem img {
+     width:100%;
+ }
+
+ @media (max-width: 1000px) {
+
+    .gridViewItem img {
+        width:100%;
+    }
+ }
+
+ @media (max-width: 1000px) {
+
+    .gridViewItem{
+      
+        display: inline-block;
+        width: 28%;
+        max-width: 250px;
+        min-width: 250px;
+        margin-right: 6px;
+        padding: 6px;
+
+    }
+ }
+
+ @media (max-width: 500px) {
+
+    .gridViewItem img {
+        width:100%;
+    }
+ }
+
+
+ @media (max-width: 500px) {
+
+    .gridViewItem{
+      
+    display: flex;
+    flex-direction: column;
+     min-width: 80%;
+     margin-left: 6px; 
+
+    }
+ }
+
+ .gridViewInfo {
+     font-weight: 300;
+     text-align: center;
+     padding: 5px 0;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+
+ }
+
+ .gridViewInfo a {
+     text-decoration: none;
+     font-weight: 300;
+
  }
