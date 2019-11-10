@@ -206,7 +206,7 @@ margin-top: 3px;
 
 .artistName {
     width: 100%; 
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #nowPlayingBarRight {
@@ -398,3 +398,170 @@ height: auto;
      font-weight: 300;
 
  }
+
+ .entityInfo {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+ }
+ .leftSection {
+     padding: 40px 0 10px 0;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+ }
+
+ .leftSection img {
+    display: flex;
+    max-width: 500px;
+    min-width: 250px;
+ }
+ .rightSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+ }
+
+ 
+ #songsList {
+
+    margin-left: 30px;
+    margin-top: 40px;
+ }
+
+ @media (max-width: 1000px) {
+
+    .entityInfo {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     };
+    }
+
+ @media (max-width: 1000px) {
+    #songsList {
+
+        margin-left: 5px;
+        margin-top: 30px;
+     };
+    }
+
+    @media (max-width: 800px) {
+        .leftSection img {
+    max-width: 200px;
+         };
+        }
+        
+        .tracklist {
+            padding-top: 0;
+            padding-left: 20px;
+            
+            
+           
+        }
+        
+        .trackNumber {
+            padding: 4px;
+        }
+
+        .tracklistRow {
+            height: 40px;
+            width: 120%;
+            padding: 15px 10px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        
+        .tracklistRow span {
+            color: #939393;
+            font-weight: 200;
+        }
+        
+        .tracklistRow:hover {
+            background-color: #120220;
+        }
+        
+        .tracklistRow .trackCount {
+            width: 15%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            
+        }
+        
+        .tracklistRow .trackCount img {
+            width: 20px;
+            visibility: hidden;
+            
+            cursor: pointer;
+        }
+        
+        .tracklistRow:hover .trackCount img {
+            visibility: visible;
+        }
+        
+        .tracklistRow .trackCount span {
+            visibility: visible;
+         
+            margin-right: 27px;
+            
+
+        }
+        
+        .tracklistRow:hover .trackCount span {
+            visibility: hidden;
+        }
+        
+        .tracklistRow .trackInfo {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+        }
+        
+      
+        .tracklistRow .trackInfo span {
+            display: block;
+           margin-top: -10px;
+            width: 100%;
+           
+        }
+        
+        .trackName {
+            overflow: hidden;
+           margin-bottom: 5px;
+            
+        }
+        .tracklistRow .trackOptions {
+            width: 5%;
+           
+            text-align: right;
+        }
+        
+        .tracklistRow .trackOptions img {
+            width: 15px;
+            visibility: hidden;
+        }
+        
+        .tracklistRow:hover .trackOptions img {
+            visibility: visible;
+        }
+        
+        .tracklistRow .trackDuration {
+            width: 42%;
+            float: right;
+            text-align: right;
+        }
+        
+        .tracklistRow .trackInfo .trackName {
+            color: #fff;
+            margin-bottom: 7px;
+            font-size: 20px;
+        }
+        
+        
