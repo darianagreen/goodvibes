@@ -455,12 +455,18 @@ height: auto;
          };
         }
         
+        
+      .trackListContainer {
+          display: flex;
+          flex-direction: row;
+          width:100%;
+      }
+
+
         .tracklist {
             padding-top: 0;
             padding-left: 20px;
             
-            
-           
         }
         
         .trackNumber {
@@ -469,7 +475,7 @@ height: auto;
 
         .tracklistRow {
             height: 40px;
-            width: 120%;
+            width: 100%;
             padding: 15px 10px;
             list-style: none;
             display: flex;
@@ -520,7 +526,7 @@ height: auto;
         .tracklistRow .trackInfo {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 120%;
             
         }
         
@@ -552,7 +558,7 @@ height: auto;
             visibility: visible;
         }
         
-        .tracklistRow .trackDuration {
+        .trackDuration {
             width: 42%;
             float: right;
             text-align: right;

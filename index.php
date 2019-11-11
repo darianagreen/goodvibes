@@ -12,9 +12,8 @@ if(isset($_SESSION['userLoggedIn'])) {
 <head>
 	<title>Welcome to Slotify!</title>
 	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/player.js"></script> 
 			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
 
 </head>
