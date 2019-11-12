@@ -50,11 +50,11 @@ main {
     display: flex;
     flex-direction: row;
     width: 80%;
-   min-height: 90vh;
-    background-color: rgb(44, 38, 51);
+   min-height: 92vh;
+   background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 21%, rgba(15,2,22,1) 61%, rgba(83,60,73,1) 94%, rgba(105,80,94,1) 100%);
 }
-
-#musicPlayer {
+    #musicPlayer {
 
     display: flex;
     flex-direction: row;
@@ -262,7 +262,7 @@ height: auto;
  .navItemLink {
     text-decoration: none;
     color: #a0a0a0;
-    font-size: 16px;
+    font-size: 14px;
  }
 
  .groupLeftMenu img {
@@ -322,7 +322,8 @@ height: auto;
  .pageHeadingBig {
      padding: 0 20px;
      text-align: center;
-     font-size: 15px;
+     font-size: 25px;
+     font-weight: 400;
      
  }
 
@@ -455,18 +456,12 @@ height: auto;
          };
         }
         
-        
-      .trackListContainer {
-          display: flex;
-          flex-direction: row;
-          width:100%;
-      }
-
-
         .tracklist {
             padding-top: 0;
             padding-left: 20px;
             
+            
+           
         }
         
         .trackNumber {
@@ -475,7 +470,7 @@ height: auto;
 
         .tracklistRow {
             height: 40px;
-            width: 100%;
+            width: 120%;
             padding: 15px 10px;
             list-style: none;
             display: flex;
@@ -526,7 +521,7 @@ height: auto;
         .tracklistRow .trackInfo {
             display: flex;
             flex-direction: column;
-            width: 120%;
+            width: 100%;
             
         }
         
@@ -558,7 +553,7 @@ height: auto;
             visibility: visible;
         }
         
-        .trackDuration {
+        .tracklistRow .trackDuration {
             width: 42%;
             float: right;
             text-align: right;
@@ -569,5 +564,53 @@ height: auto;
             margin-bottom: 7px;
             font-size: 20px;
         }
+
+        .gridViewItem a:hover img{
+            opacity: 0.7;
+            border: 3px solid white;   
+        }
         
+        .gridViewItem a {
+            position:relative;
+        }
         
+        .gridViewItem a:hover:before {
+            position: absolute; 
+            background-image: url("/goodVibes/assets/images/icons/play3.png");
+            width: 75px;
+            height:75px;
+            top: 50%;
+            left: 50%;
+            margin-left: -36px;
+            margin-top: -36px;
+            z-index: 2;
+            display: block;
+            content: '';
+        }
+
+        #connectSpotify {
+            background-color: transparent;
+            border: 2 solid  white;
+            text-decoration: none;
+            line-height: 15px;
+            border-radius: 20px;
+            height: 40px;
+            width: 100px;
+            margin-left: 15px;
+        }
+
+        #connectSpotify:hover {
+            background-color: rgb(78, 9, 78); 
+            cursor:pointer;
+        }
+
+        #connectSpotify:focus {
+            outline: none;
+        }
+
+        #framePlayer {
+            position: fixed;
+            
+            margin-top: 91vh;
+            z-index:3;
+        }

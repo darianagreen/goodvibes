@@ -1,36 +1,26 @@
 <?php
-include("includes/handlers/header.php");
 include("includes/config.php");
 include("includes/classes/Artist.php");
 include("includes/classes/Album.php");
 include("includes/classes/Song.php");
-
-
-
+include("includes/header.php");
 if(isset($_SESSION['userLoggedIn'])) {
 	$userLoggedIn = $_SESSION['userLoggedIn'];
 }
-
-
 ?>
 
 <html>
 <head>
 	<title>Welcome to Slotify!</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-            <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
-            <script src="assets/js/player.js"></script> 
-           
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"></script>
+			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
 
 </head>
 
 <body>	
-
-   
-
 <main>
 
 	<div id="mainSpace"> 
@@ -64,10 +54,7 @@ if(isset($_SESSION['userLoggedIn'])) {
 
                     <div class="rightSection">
                             <h2 id="songsList"> Songs </h2>
-
-                     <div class="tracklistContainer">
-                            
-                            
+                            <div class="tracklistContainer">
                             <ul class="tracklist">
 		
 		<?php
