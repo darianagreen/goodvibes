@@ -12,3 +12,6 @@ Set parameters in your application on developer dashboard on Spotify. Please cha
 
 ```
 the project must be run in the subfolder http://localhost:8080/goodVibes/index.php
+
+```
+Database dump file: goodVibes.sql
